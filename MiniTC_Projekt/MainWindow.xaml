@@ -24,7 +24,7 @@
         <Grid.RowDefinitions>
             <RowDefinition Height="0.3*"/>
             <RowDefinition/>
-            <RowDefinition Height="0.2*"/>
+            <RowDefinition Height="0.3*"/>
         </Grid.RowDefinitions>
 
         <Button Grid.ColumnSpan="2" Grid.Row="2" Height="30" Width="100" Margin="-100" Content="{Binding Source={x:Static resx:Resources.CopyButton}}" Command="{Binding Copy}" />

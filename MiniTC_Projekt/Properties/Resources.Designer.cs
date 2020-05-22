@@ -88,6 +88,24 @@ namespace MiniTC_Projekt.Properties {
         }
         
         /// <summary>
+        /// Wyszukuje zlokalizowany ciąg podobny do ciągu Błąd kopiowania.
+        /// </summary>
+        public static string ErrorCaption {
+            get {
+                return ResourceManager.GetString("ErrorCaption", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        /// Wyszukuje zlokalizowany ciąg podobny do ciągu Upewnij się, że wybrałeś plik oraz że nie istnieje w wybranej lokalizacji..
+        /// </summary>
+        public static string ErrorText {
+            get {
+                return ResourceManager.GetString("ErrorText", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         /// Wyszukuje zlokalizowany ciąg podobny do ciągu File already exist.
         /// </summary>
         public static string FileAlreadyExist {

@@ -1,9 +1,11 @@
-﻿using System;
+﻿using MiniTC_Projekt.Views;
+using System;
 using System.Collections.Generic;
 using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Windows;
 using Resx = MiniTC_Projekt.Properties.Resources;
 
 namespace MiniTC_Projekt.ViewModels
@@ -38,7 +40,14 @@ namespace MiniTC_Projekt.ViewModels
                                 File.Copy(LeftPanel.SelectedItem, RightPanel.CurrentDir + "/" + LeftPanel.ItemName);
                                 RightPanel.Refresh();
                             }
-                            catch { }
+                            catch
+                            {
+                                MessageDialogBox msgWindow = new MessageDialogBox();
+                                msgWindow.Caption = Properties.Resources.ErrorCaption;
+                                msgWindow.Icon = MessageBoxImage.Error;
+                                msgWindow.showMessageBox(Properties.Resources.ErrorText);
+                                return;
+                            }
                         },
                         condition => LeftPanel.CurrentDir != RightPanel.CurrentDir
                         ) ;

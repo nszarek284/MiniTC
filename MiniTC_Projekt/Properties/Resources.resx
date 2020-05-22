@@ -126,6 +126,12 @@
   <data name="Drives" xml:space="preserve">
     <value>Drives:</value>
   </data>
+  <data name="ErrorCaption" xml:space="preserve">
+    <value>Błąd kopiowania</value>
+  </data>
+  <data name="ErrorText" xml:space="preserve">
+    <value>Upewnij się, że wybrałeś plik oraz że nie istnieje w wybranej lokalizacji.</value>
+  </data>
   <data name="FileAlreadyExist" xml:space="preserve">
     <value>File already exist</value>
   </data>
